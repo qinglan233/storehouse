@@ -16,7 +16,10 @@ cmake_minimum_required(VERSION 3.2.0 FATAL_ERROR)
 
 project(Storehouse)
 
-option(BUILD_STATIC "" OFF)
+option(BUILD_STATIC "" ON)
+SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+SET(BUILD_SHARED_LIBRARIES OFF)
+
 
 enable_testing()
 
